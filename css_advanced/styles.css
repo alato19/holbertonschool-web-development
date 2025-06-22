@@ -1,170 +1,439 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+/* Universal Selector */
+* {
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+  box-sizing: border-box;
 }
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-/* end of CSS Reset */
 
 header {
   background-image: url(./images/header-image.png);
   background-size: cover;
-  height: 600px;
+  height: 1440px;
 }
 
 .nav-container {
-  overflow: hidden;
   width: 70%;
   margin: 0 auto;
   padding-top: 30px;
 }
 
 .logo-container {
+  width: 40%;
   float: left;
   margin-left: 30px;
 }
 
 .menu-container {
+  width: 60%;
   float: right;
 }
 
 .menu-container > ul {
   list-style-type: none;
+  float: right;
 }
 
 .menu-container > ul > li {
-  width: 100px;
+  width: 150px;
+  padding: 0 20px;
   display: inline-block;
 }
 
 .menu-container > ul > li > a {
   text-decoration: none;
+  color: #fff;
 }
 
 .school-container > h1 {
   text-align: center;
-  font-size: 50px;
+  font-size: 130px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
+  margin: 300px 0 0 0;
+}
+
+.school-container > ul {
+  width: 100%;
+  margin-top: 30px;
+  list-style-type: none;
+  color: white;
+  text-align: center;
+}
+
+.school-container > ul > li {
+  width: 180px;
+  display: inline-block;
+  font-size: 24px;
+  text-align: center;
+}
+
+.school-container > button {
+  width: 208px;
+  height: 54px;
+  border-radius: 22px;
+  background-color: #c271ff;
+  color: white;
+  border-style: none;
+  font-size: 100%;
+  display: block;
+  margin: 60px auto;
+  cursor: pointer;
+}
+
+.learn-container {
+  margin-top: 210px;
+  height: 350px;
+}
+.learn-container > h2 {
+  width: 40%;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 20px auto;
+}
+
+.learn-container > h2 > span {
+  color: #c271ff;
+}
+
+.parent {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  margin: 100px auto;
+}
+
+.children {
+  width: 22%;
+}
+
+.children > img {
+  width: 50%;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.children > h3 {
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+}
+
+.children > p {
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.section-testimonial {
+  background-color: #c271ff;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-details {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.testimonial-container {
+  max-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-container > img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.testimonial-quotes {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  color: white;
+}
+
+.testimonial-quotes > blockquote {
+  font-size: 24px;
+  margin: 0;
+}
+
+.testimonial-quotes > p {
+  font-size: 20px;
+  margin: 0;
+  color: white;
+}
+
+.videos-section {
+  background-color: white;
+  margin-bottom: 70px;
+}
+
+.videos-section > h1 {
+  text-align: center;
+  font-size: 36px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  margin: 40px auto;
+  width: 40%;
+}
+
+.videos-section > h1 > span {
+  color: #c271ff;
+}
+
+.videos-container {
+  display: flex;
+  padding: 0 50px;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.video {
+  width: 20%;
+  margin: 0 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.video > img {
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.video > h2 {
+  font-size: 20px;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.video > p {
+  font-size: 16px;
+  margin-top: 10px;
+  color: grey;
+  padding: 0 20px;
+  line-height: 1.5;
+}
+
+.author-information {
+  margin-top: 10px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.author-information > img {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.author-information > h3 {
+  font-size: 16px;
+  color: #c271ff;
+  width: 80%;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rating-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.rating {
+  width: 65%;
+  padding-left: 20px;
+}
+
+.rating > img {
+  width: 15px;
+  height: auto;
+  display: inline-block;
+}
+
+.rating-container > p {
+  width: 35%;
+  text-align: right;
+  font-size: 14px;
+  color: #c271ff;
+  padding: 0 20px;
+}
+
+.free-membership {
+  display: block;
+  height: 400px;
+  background-color: black;
+}
+
+.free-membership > h1 {
+  width: 40%;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 20px auto;
+  padding: 30px 0;
+}
+
+.free-membership > h1 > span {
+  color: #c271ff;
+}
+
+.free-membership > button {
+  width: 208px;
+  height: 54px;
+  border-radius: 22px;
+  background-color: #c271ff;
+  color: white;
+  border-style: none;
+  font-size: 100%;
+  display: block;
+  margin: 60px auto;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.membership-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.membership {
+  width: 20%;
+  margin: 0px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.membership > img {
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin: 0 auto;
+}
+
+.membership > h2 {
+  margin-top: 20px;
+  padding: 0 30px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+.membership > p {
+  margin-top: 10px;
+  padding: 0 30px;
+  color: white;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.faq-section {
+  background-color: white;
+}
+
+.faq-section > h1 {
+  font-size: 56px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row-blocks {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.row-block-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  margin-left: 100px;
+  gap: 20px;
+}
+
+.row-block-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  margin-right: 100px;
+  gap: 20px;
+}
+
+.item-block {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.item-block > h2 {
+  font-size: 20px;
+}
+
+.item-block > p {
+  font-size: 16px;
+  line-height: 1.5;
+  padding-top: 20px;
+}
+
+/* FOOTER */
+
+.footer-content {
+  height: 200px;
+  width: auto;
+  background-color: rgb(7, 7, 36);
+}
+
+.footer-images {
+  display: flex;
+  justify-content: center;
+  gap: 500px;
+}
+
+.footer-images > img {
+  display: flex;
+  justify-content: left;
+  margin-top: 50px;
+}
+
+.footer-images-with-link {
+  display: flex;
+  justify-content: right;
+  margin-top: 50px;
+  gap: 10px;
+}
+
+.footer-content > p {
+  display: block;
+  margin-top: 60px;
+  text-align: center;
+  color: rgb(75, 75, 121);
+  font-size: 16px;
 }
